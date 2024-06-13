@@ -32,16 +32,16 @@ class _DicePageState extends State<DicePage> {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: TextButton(
-              onPressed: () {
+            child: GestureDetector(
+              onTap: () {
                 buttonClicked();
               },
               child: Image.asset('images/dice$leftDiceButton.png'),
             ),
           ),
           Expanded(
-              child: TextButton(
-                  onPressed: () {
+              child: GestureDetector(
+                  onTap: () {
                     buttonClicked();
                   },
                   child: Image.asset('images/dice$rightDiceButton.png'))),
